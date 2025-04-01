@@ -1,4 +1,4 @@
-# Warcraft III on Linux
+# Warcraft III on Linux via Wine
 
 Prerequisites: original Warcraft III CDs
 
