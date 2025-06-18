@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-sudo apt install libapr1 libaprutil1 libasound2 libglib2.0-0
+sudo apt install libapr1 libaprutil1 libglib2.0-0
 
 sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_19.0_Linux.run -i
 ```
