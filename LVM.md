@@ -41,4 +41,5 @@ mkfs.ext4 /dev/vg00/data
 # resize
 lvextend --resizefs -L 1G /dev/mylvm/data          # specific size
 lvextend --resizefs -l +100%FREE /dev/mylvm/data   # use all avail space
+lvreduce --resizefs --size -50G /dev/mylvm/data    # shrink
 ```
