@@ -31,7 +31,7 @@ QT_AUTO_SCREEN_SCALE_FACTOR=true
 ```
 
 ## DeckLink Cards
-Normally, DeckLink cards are detected automatically. In case of problems, try downgrading to a older kernel version if possible. Support for newer Linux kernels always comes with a delay.
+Normally, DeckLink cards are detected automatically after installing the [Desktop Video](https://www.blackmagicdesign.com/de/support/family/capture-and-playback) software. In case of problems, try downgrading to a older kernel version if possible. Support for newer Linux kernels always comes with a delay.
 
 ```
 # should show your card
