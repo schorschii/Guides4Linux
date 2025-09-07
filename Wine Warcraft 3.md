@@ -28,7 +28,7 @@ Prerequisites: original Warcraft III CDs
    WINEPREFIX=/home/USERNAME/.wine-wc wine "/home/USERNAME/.wine-wc/drive_c/Program Files (x86)/Warcraft III/Warcraft III.exe" -nativefullscreen -graphicsapi OpenGL2
    ```
 
-7. Install The Frozen Throne
+7. Install The Frozen Throne:
    ```
    # install!
    WINEPREFIX=/home/USERNAME/.wine-wc wine /path/to/your/iso/install.exe
