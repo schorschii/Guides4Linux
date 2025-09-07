@@ -26,24 +26,6 @@ If everything works, hibernate needs to be enabled for the (Gnome) desktop to ma
 
 ### Ubuntu 24.04 or newer
 ```
-sudo mkdir -p /etc/polkit-1/localauthority/50-local.d
-sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
-```
-
-```
-[Re-enable hibernate by default in upower]
-Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
-ResultActive=yes
-
-[Re-enable hibernate by default in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
-ResultActive=yes
-```
-
-### Ubuntu 22.04 or older
-```
 sudo nano /etc/polkit-1/rules.d/10-enable-hibernate.rules
 ```
 
@@ -60,3 +42,20 @@ polkit.addRule(function(action, subject) {
 });
 ```
 
+### Ubuntu 22.04 or older
+```
+sudo mkdir -p /etc/polkit-1/localauthority/50-local.d
+sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+```
+
+```
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes
+```
