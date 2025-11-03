@@ -1,5 +1,5 @@
 # Command & Conquer Generals on Linux via Wine
-With local multiplayer support via IPX!
+With local multiplayer support!
 
 Prerequisites: original C&C Generals CDs + Patch 1.08
 
